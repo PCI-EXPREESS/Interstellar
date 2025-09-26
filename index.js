@@ -9,12 +9,7 @@ import express from "express";
 import basicAuth from "express-basic-auth";
 import mime from "mime";
 import fetch from "node-fetch";
-// import { setupMasqr } from "./Masqr.js";
 import config from "./config.js";
-//Block unauth devices
-if (!req.headers['user-agent'].includes('CrOS')) {
-  return res.redirect('https://www.securly.com/clasroom/process/local/?user=354drt:%3E%3Cdfcychjchj%3E');
-}
 console.log(chalk.yellow("🚀 Starting server..."));
 
 const __dirname = process.cwd();
